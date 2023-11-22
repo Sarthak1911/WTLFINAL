@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        var num1 = parseFloat(prompt("Enter Number 1:"));
+        
+        if (isNaN(num1)) {
+            document.write("Invalid Input for number 1");
+        }
+        else{
+            var num2 = parseFloat(prompt("Enter Number 2:"));
+
+            if (isNaN(num2)) {
+                document.write("Invalid input for number 2");
+            }
+            else{
+                var sum = num1 + num2;
+                var sub = num1 - num2;
+                var mul = num1 * num2;
+                var div = num1 / num2;
+        
+        
+                document.write("Addition:" + sum +"<br>");
+                document.write("Substraction:" + sub +"<br>");
+                document.write("Multiplication:" + mul +"<br>");
+                document.write("Division:"+ div +"<br>");
+            }
+        }
+    </script>
+</body>
+</html>
